@@ -1,0 +1,13 @@
+$gradient-color: linear-gradient(135deg, #4c88ef 0, #17e4d9 100%);
+$gradient-color-reverse: linear-gradient(135deg, #17e4d9 0, #4c88ef 100%);
+$primary-color: #4c88ef;
+$secondary-color: #17e4d9;
+$text-color: rgb(133, 147, 157);
+@import 'base';
+@import 'box-shadow';
+@import 'ui/**/*';
+@import 'block/**/*';
+main {
+    overflow: scroll;
+    color: $text-color;
+}

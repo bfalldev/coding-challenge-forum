@@ -1,0 +1,29 @@
+.form-style {
+    input {
+        margin: 0;
+        padding-left: 1rem;
+        display: inline-block;
+        width: 280px;
+        height: 48px;
+        border: 1px solid rgb(219, 218, 218);
+        background: transparent;
+        @media screen and (max-width: 420px) {
+            width: 220px;
+        }
+        @media screen and (max-width: 330px) {
+            width: 180px;
+            font-size: .7rem;
+        }
+    }
+    button {
+        margin: 0;
+        padding: 0 2rem;
+        background: $primary-color;
+        height: 48px;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
