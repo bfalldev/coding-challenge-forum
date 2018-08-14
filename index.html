@@ -79,89 +79,112 @@
     <header class="main__header">
         <div class="content">
             <div class="header__logo">
-                <img  src="assets/imgs/cc1.jpg" alt="logo" srcset="" style=" width : 180px; border-radius: 150px;" >
+                <a href="index.html"><img  src="assets/imgs/cc1.jpg" alt="logo" srcset="" style=" width : 100px; border-radius: 150px;" ></a>
             </div>
 
-            <nav class="navbar" style="padding-left: 10px; padding-right: 20px">
-                <div class="container-fluid">
-                    <form class="navbar-form navbar-right inline-form">
-                        <div class="form-group">
-                            <input type="search" class="input-sm form-control" placeholder="Recherche">
-                            <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
-                        </div>
-                    </form>
+
+                    <nav class="header__nav">
+                        <ul class="nav__link-group">
+                            <li>
+                                <a href="" class="nav-item">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-item">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-item">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </nav>
-        </div>
+
     </header>
 
     <section class="main__container">
-         <div class="panel-heading" align="center"><h2>FORUM</h2></div>
+         <div class="panel-heading" align="center">
+
+             <strong><BIG>THEME DES FORUMS</BIG></strong>
+                 <form class="navbar-form  navbar-right form-inline">
+                     <div class="form-group">
+                         <input type="search" class="form-control" placeholder="mettez un par mot clef">
+                         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+                     </div>
+                 </form>
+
+         </div>
         <hr>
-            <div class="categorie tab-pane">
-                <div class="chaq btn-categorie">
+            <div class="categorie tab-pane web">
+                <a href="categories/web.php" title="Developpement Web"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fa fa-globe" aria-hidden="true"></i>
-                        Developpement
+                         Web
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                <a href="categories/projet.php"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fa fa-sticky-note" aria-hidden="true"></i>
                         Gestion de projet
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                <a href="categories/modelisation.php"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fas fa-project-diagram" aria-hidden="true"></i>
                         Modélisation
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                    <a href="categories/infographie.php"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fas fa-paint-brush" aria-hidden="true"></i>
                         Infographie
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                <a href="categories/db.php"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fas fa-database" aria-hidden="true"></i>
                         Base de données
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                <a href="categories/design.php"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                         Design
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                <a href="categories/desktop.php"><div class="chaq btn-categorie">
                     <h2>
-                        <i class="fas fa-codet" aria-hidden="true"></i>
+                        <i class="fas fa-code" aria-hidden="true"></i>
                         Desktop
                     </h2>
-                </div>
-                <div class="chaq btn-categorie">
+                </div></a>
+                <a href="categories/mobile.php"><div class="chaq btn-categorie">
                     <h2>
                         <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                         Mobile
                     </h2>
-                </div>
+                </div></a>
             </div>
         <hr>
         <div class="col-md-12">
-            <button class="btn btn-primary btn" id="add">
-                creer une post
-            </button>
+            <button class="btn btn-primary btn" id="add">creer une post</button>
             <div class="container-fluid modale">
                 <form id="form-add" class="col-md-6" hidden>
                     <div class="form-group">
                         <label for="categorie"><i class="fas fa-th-list"></i>Catégories</label>
                         <select id="categorie" class="form-control" style="color: #0D47A1">
-                            <option selected>Developpement</option>
-                            <option>Design</option>
-                            <option>Gestion de projet</option>
-                            <option>Modélisation</option>
+                            <option value="developpement web" selected>Developpement Web</option>
+                            <option value="Design">Design</option>
+                            <option value="Gestion de projet">Gestion de projet</option>
+                            <option value="Infographie">Infografie</option>
+                            <option value="Modélisation">Modélisation</option>
+                            <option value="Base de données">Base de données</option>
+                            <option value="Developpement mobile">Developpement mobile</option>
+                            <option value="Developpement desktop">Developpement desktop</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -175,7 +198,9 @@
             </div>
             <div class="col-md-8">
                 <div class="panel panel-primary">
-                    <div class="panel-heading" align="center">Les derniers sujets</div>
+                    <div class="panel-heading" align="center">
+                        Les derniers sujets
+                    </div>
                     <div class="panel-body">
                         <table class="table  table-responsive table-striped">
                             <tr>
