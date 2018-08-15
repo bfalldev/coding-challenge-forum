@@ -46,8 +46,8 @@
         .btn-categorie {
             padding: .3rem 2rem;
             border: 1px solid #4c88ef;
-            color: black;
-            background-color: #5bc0de;
+            color: white;
+            background-color: #0D47A1;
             border-radius: 10px;
         }
         .btn-categorie::before {
@@ -189,7 +189,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Baye Fall</b><br>
+                                <b>Baye Fall</b><br> le
                                 le 14/08/2018 à 12:58
                             </td>
                         </tr>
@@ -206,7 +206,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Angel</b><br>
+                                <b>Angel</b><br>
                                 le 14/08/2018 à 00:45
                             </td>
                         </tr>
@@ -222,7 +222,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Mouhamed Ndiaye</b><br>
+                                <b>Mouhamed Ndiaye</b><br>
                                 le 14/08/2018 à 04:22
                             </td>
                         </tr>
@@ -238,7 +238,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Baye Fall</b><br>
+                                <b>Baye Fall</b><br>
                                 le 14/08/2018 à 13:25
                             </td>
                         </tr>
@@ -255,7 +255,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Angel</b><br>
+                                <b>Angel</b><br>
                                 le 14/08/2018 à 12:00
                             </td>
                         </tr>
@@ -271,7 +271,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Mouhamed Ndiaye</b><br>
+                                <b>Mouhamed Ndiaye</b><br>
                                 le 14/08/2018 à 12:58
                             </td>
                         </tr>
@@ -285,7 +285,7 @@
                                 155 commentaires
                             </td>
                             <td>
-                                Posté par : <b>Angel</b><br>
+                                <b>Angel</b><br>
                                 le 14/08/2018 à 10:58
                             </td>
                         </tr>
@@ -301,7 +301,7 @@
                             </td>
                             <td>
                                 <i class="fas fa-user"></i>
-                                Posté par : <b>Mouhamed Ndiaye</b><br>
+                                <b>Mouhamed Ndiaye</b><br>
                                 le 14/08/2018 à 12:58
                             </td>
                         </tr>

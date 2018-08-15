@@ -28,9 +28,6 @@
         .modale{
             padding: 12px;
         }
-        .bout{
-            /*padding: 25px;*/
-        }
         .categorie{
             display: flex;
             flex-flow: row wrap;
@@ -46,8 +43,8 @@
         .btn-categorie {
             padding: .3rem 2rem;
             border: 1px solid #4c88ef;
-            color: black;
-            background-color: #5bc0de;
+            color: white;
+            background-color: #0D47A1;
             border-radius: 10px;
         }
         .btn-categorie::before {
@@ -60,6 +57,9 @@
             color: white;
             border-color: blue;
             background-color: blue;
+        }
+        .icn{
+            font-size: 2em;
         }
     </style>
     <script>
@@ -81,28 +81,26 @@
             <div class="header__logo">
                 <a href="index.html"><img  src="assets/imgs/cc1.jpg" alt="logo" srcset="" style=" width : 100px; border-radius: 150px;" ></a>
             </div>
-
-
-                    <nav class="header__nav">
-                        <ul class="nav__link-group">
-                            <li>
-                                <a href="" class="nav-item">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-item">
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-item">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+            <nav class="header__nav" style=" width : 200px;">
+                <ul class="nav__link-group">
+                    <li>
+                        <a href="" class="nav-item">
+                            <i class="fab fa-github icn" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-item">
+                            <i class="fab fa-facebook-square icn"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-item">
+                            <i class="fab fa-twitter icn" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
@@ -175,8 +173,8 @@
             <div class="container-fluid modale">
                 <form id="form-add" class="col-md-6" hidden>
                     <div class="form-group">
-                        <label for="categorie"><i class="fas fa-th-list"></i>Catégories</label>
-                        <select id="categorie" class="form-control" style="color: #0D47A1">
+                        <label for="categorie_id"><i class="fas fa-th-list"></i>Catégories</label>
+                        <select id="categorie_id" name="categorie_id" class="form-control" style="color: #0D47A1">
                             <option value="developpement web" selected>Developpement Web</option>
                             <option value="Design">Design</option>
                             <option value="Gestion de projet">Gestion de projet</option>
@@ -189,7 +187,7 @@
                     </div>
                     <div class="form-group">
                         <label class="control-label">Mettez ici la description de votre poste <i class="fas fa-hand-point-down"></i></label>
-                        <textarea class="form-control" id="description" style="background-color: #444444; color: white;">
+                        <textarea class="form-control" id="name" name="body" style="background-color: #444444; color: white;">
 
                         </textarea>
                     </div>
@@ -215,7 +213,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Baye Fall</b><br>
+                                    <b>Baye Fall</b><br> le
                                     le 14/08/2018 à 12:58
                                 </td>
                             </tr>
@@ -232,7 +230,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Angel</b><br>
+                                    <b>Angel</b><br>
                                     le 14/08/2018 à 00:45
                                 </td>
                             </tr>
@@ -248,7 +246,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Mouhamed Ndiaye</b><br>
+                                    <b>Mouhamed Ndiaye</b><br>
                                     le 14/08/2018 à 04:22
                                 </td>
                             </tr>
@@ -264,7 +262,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Baye Fall</b><br>
+                                    <b>Baye Fall</b><br>
                                     le 14/08/2018 à 13:25
                                 </td>
                             </tr>
@@ -281,7 +279,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Angel</b><br>
+                                    <b>Angel</b><br>
                                     le 14/08/2018 à 12:00
                                 </td>
                             </tr>
@@ -297,7 +295,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Mouhamed Ndiaye</b><br>
+                                    <b>Mouhamed Ndiaye</b><br>
                                     le 14/08/2018 à 12:58
                                 </td>
                             </tr>
@@ -311,7 +309,7 @@
                                     155 commentaires
                                 </td>
                                 <td>
-                                    Posté par : <b>Angel</b><br>
+                                    <b>Angel</b><br>
                                     le 14/08/2018 à 10:58
                                 </td>
                             </tr>
@@ -327,7 +325,7 @@
                                 </td>
                                 <td>
                                     <i class="fas fa-user"></i>
-                                    Posté par : <b>Mouhamed Ndiaye</b><br>
+                                    <b>Mouhamed Ndiaye</b><br>
                                     le 14/08/2018 à 12:58
                                 </td>
                             </tr>
